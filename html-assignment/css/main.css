@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: #eeb7d2; 
+}
+
+.site-title {
+    color: white; 
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+div section ol {list-style-type: square;
+}
+
+div section ul li:nth-child(odd) {
+    background-color: #cdc7e1; 
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {text-decoration: none;
+}
+
+a {background-color: #f6aef0; 
+    border: 1px solid #538add;
+
+}
+
+a:hover, a:focus {
+    background-color: #be9ce7; 
+}
