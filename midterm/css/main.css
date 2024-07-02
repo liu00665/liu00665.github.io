@@ -1,0 +1,150 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #aad4cf;
+    color: black;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.wrapper {
+    background-color: #cee5e2;
+    width: 1026px;
+    margin: 0 211px;
+}
+
+header img {
+    width: 1026px;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+
+.wrapper nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper nav ul li {
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid black;
+}
+/* Remove the border from the last item */
+.wrapper nav ul li:nth-child(3) {
+    border-right: none; 
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+
+article {
+    padding: 15px;
+}
+
+article h2 {
+    margin-bottom: 15px;
+}
+
+.article-image {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 300px;
+}
+
+.facts ul {
+    list-style-type: disc;
+    padding: 0 15px;
+    margin: 18px;
+    margin-top: 0;
+}
+
+/* Contact form styling */
+.contact {
+    padding: 18px;
+    border: 1px solid black;
+    margin: 18px;
+    margin-top: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 1em;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.contact form h2 {
+    margin-top: 1em;
+}
+
+.contact form input[type="radio"] {
+    list-style: none;
+    display: inline-block;
+   
+}
+
+.contact form p {
+    text-decoration: none;
+    color:black;
+    padding: 10px 20px;
+    border: 1px solid black;
+
+}
+
+
+footer {
+    text-align: right;
+    padding: 1em;
+    color: black;
+    position:static;
+}
+
+/* to show the border line */
+p a {
+    border: 1px solid #000; 
+    padding: 5px 10px; 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Disable the default click effect of a link */
+p a:hover, p a:focus {
+    text-decoration: none; 
+    outline: none; 
+}
+
+.wrapper h2 {
+    padding: 15px;
+    margin: 0;
+}
