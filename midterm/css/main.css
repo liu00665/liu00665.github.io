@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
     background-color: #aad4cf;
     color: black;
+    margin-top: 0px;
 }
 
 /* Header styling */
@@ -12,6 +13,7 @@ header {
     position: relative;
     text-align: center;
     color: white;
+    margin-top: 0px;
 }
 .wrapper {
     background-color: #cee5e2;
