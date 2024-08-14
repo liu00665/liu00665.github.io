@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* reset the css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -53,6 +53,7 @@ header h1 {
     margin-top: 10px;
 }
 
+/* make the nav a inline list */
 nav {
     background-color: #222;
     padding: 10px 0;
@@ -75,7 +76,6 @@ nav ul li a {
     text-align: center;
 }
 
-/* Search Bar Styles */
 .search {
     padding: 20px;
     background-color: #222;
@@ -112,8 +112,9 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px; 
+    height: 600px;
 }
+
 .welcome img {
     display: none;
 }
@@ -122,12 +123,12 @@ nav ul li a {
     max-width: 1200px;
     margin: 0 0;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 40px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
 }
 
 .welcome h1 {
-    font-size: 4rem; 
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -135,18 +136,18 @@ nav ul li a {
 
 .welcome p {
     font-size: 1rem;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
     max-width: 600px;
 }
 
 .welcome a {
     display: inline-block;
-    padding: 15px 30px; 
+    padding: 15px 30px;
     background-color: #c78c06;
     color: #222;
     text-decoration: none;
     border: none;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
 }
 
 
@@ -161,8 +162,8 @@ nav ul li a {
 }
 
 .about-us .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .about-us img {
@@ -181,10 +182,9 @@ nav ul li a {
 .about-us p {
     color: #222;
     margin-bottom: 20px;
-    line-height: 1.6;
 }
 
-.services {
+.services  {
     padding: 0;
     background-color: #fff;
 }
@@ -196,6 +196,10 @@ nav ul li a {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #222;
+}
+
+.services h2,h3,p {
+    margin: 0 20px;
 }
 
 .service {
@@ -222,24 +226,33 @@ nav ul li a {
 .service p {
     font-size: 1rem;
     color: #222;
-    line-height: 1.6;
     margin-bottom: 20px;
 }
-
+/* adjust the size of the buttom */
 .service a {
     display: inline-block;
-    padding: 10px 20px;
+    width: 150px;
+    height: 30px;
+    padding: 20px 20px;
     background-color: #222;
     color: white;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Set the spacing between the icon and text */
+.service a i {
+    margin-left: 10px; 
+    font-size: 1rem; 
 }
 
 /* background pic all over */
 .vision {
-    background-image: url('../images/vision.jpg'); 
-    background-size:cover;
+    background-image: url('../images/vision.jpg');
+    background-size: cover;
     background-position: center;
     color: white;
     text-align: left;
@@ -260,7 +273,7 @@ nav ul li a {
 .vision p {
     font-size: 1rem;
     margin-bottom: 30px;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
 /* a button with golgen border */
@@ -271,12 +284,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #c78c06; 
+    border: 2px solid #c78c06;
 }
 
-/* Team Section */
 .team {
-    padding: 50px 20px;
+    padding: 50px 10px;
     background-color: #fff;
     text-align: left;
 }
@@ -297,7 +309,7 @@ nav ul li a {
 }
 
 .team-member img {
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -313,30 +325,26 @@ nav ul li a {
     margin: 5px 10px 10px 20px;
     color: #222;
     font-weight: bolder;
-    border-bottom:2px solid #c78c06 ;
+    border-bottom: 2px solid #c78c06;
 }
 
 
 .team-member p {
     font-size: 1rem;
-    line-height: 1.6;
     margin: 0 20px 20px 20px;
     color: #222;
 }
 
 .contact {
+    flex-direction: column;
     background-color: #fff;
     padding: 40px 20px;
 }
 
-.contact .wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .contact h2 {
     font-size: 2.5rem;
-    font-weight:bolder ;
+    font-weight: bolder;
     margin-bottom: 20px;
     color: #222;
 }
@@ -361,7 +369,7 @@ nav ul li a {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #222;
 }
@@ -399,7 +407,7 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.hours th,.hours td {
+.hours th, .hours td {
     padding: 15px;
     border: 1px solid #222;
     font-size: 0.75rem;
@@ -415,7 +423,7 @@ nav ul li a {
     background-color: #fff;
 }
 
-/* Location Section */
+
 .contact-info {
     padding: 50px 0;
     background-color: #fff;
@@ -435,29 +443,38 @@ nav ul li a {
     border: none;
 }
 
+/* make the footer as a inline column */
 footer {
     background-color: #222;
     color: #c78c06;
     padding: 20px;
     text-align: left;
 }
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 footer p {
     margin: 5px 0;
     font-size: 0.75rem;
 }
+
 /* add un underline for the Unsplash and make it the same color as the rest of the text */
 footer a {
     color: #c78c06;
     text-decoration: underline;
 }
 
-@media screen and (min-width: 760px) and (max-width:1200px) {
+
+@media screen and (min-width: 760px) {
     header {
         background-color: #222;
         padding: 10px 0;
         text-align: center;
     }
+
     .wrapper {
         max-width: 1200px;
         margin: 0 auto;
@@ -465,6 +482,7 @@ footer a {
         justify-content: space-between;
         align-items: center;
     }
+
     .logo {
         display: flex;
         justify-content: flex-start;
@@ -475,38 +493,47 @@ footer a {
         list-style-type: none;
         gap: 1rem;
     }
-    
+
     .nav-links a {
         text-decoration: none;
         color: #c78c06;
         padding: 10px 20px;
         display: block;
     }
-    
-    .nav-links a:hover,
-    .nav-links a:focus {
+/* make the affects on nav change the color when hovering over it*/
+    .nav-links a:hover {
         color: black;
         background-color: #c78c06;
     }
-    
+
     .search {
         display: flex;
         align-items: center;
     }
+    
+    .about-us .wrapper {
+        margin: 0 auto;
+    }
+
+
     .about-us img {
         display: flex;
         list-style-type: none;
         justify-content: space-around;
     }
-    .about-us h2,p {
+
+    .about-us h2, p {
         padding: 10px 15px;
     }
+
+/* using grid to place all the blocks */
     .services .wrapper {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 20px;
         margin-bottom: 20px;
     }
+
     .services h2 {
         grid-column: 1 / -1;
     }
@@ -526,80 +553,113 @@ footer a {
         grid-column: span 2;
     }
 
-
-    .service a {
-        text-align: center;
-        margin-top: 20px;
+    .services a {
+        display: block;
+        width: 80%;
+        padding: 20px;
+        
     }
+
     .vision .wrapper {
         position: relative;
         z-index: 1;
         display: flex;
-        flex-direction: column; 
-        gap: 1rem; 
-        align-items: flex-start; 
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
         height: 60px;
     }
+/* make it a column and place all the information by order */
     .team .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 两列布局 */
-        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
     }
-    
+
     .team h2 {
         grid-column: 1 / -1;
     }
-    
+
     .team-member {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 两列布局 */
+        grid-template-columns: 1fr 1fr; 
         gap: 20px;
         align-items: center;
         padding: 20px;
         overflow: hidden;
     }
-    
+    .team-order-1{
+        order:1
+    }
+    .team-order-2{
+        order:2
+    }
+    .team-order-3{
+        order:3
+    }
+    .team-order-4{
+        order:4
+    }
+
     .team-member img {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
         margin-bottom: 0;
     }
-    
+
     .team-member h3 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         margin: 0;
     }
-    
+
     .team-member h4 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         margin: 10px 0;
     }
-    
+
     .team-member p {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
-    
+
     .team-member:nth-child(even) img {
         grid-column: 2 / 3;
         grid-row: 1 / 3;
     }
-    
+
     .team-member:nth-child(even) h3,
     .team-member:nth-child(even) h4,
     .team-member:nth-child(even) p {
         grid-column: 1 / 2;
         text-align: left;
     }
+/* using flex to make order of the contact */
     .contact .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
+    .contact-h2{
+        flex-basis: 100%
+    }
 
+    .hours-order {
+        order: 3;
+        flex-basis: 100%
+    }
+
+    .contact-form-order {
+        flex: 1; 
+        margin: 10px;
+        order: 1;
+    }
+
+    .contact-info-order {
+        margin: 10px;
+        flex: 1; 
+        order: 2;
+    }
 }
 
 
